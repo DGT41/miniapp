@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:telegram_web_app/telegram_web_app.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -51,6 +53,10 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+
+            Text(TelegramWebApp.instance.version),
+            Text(TelegramWebApp.instance.themeParams),
+            Text(TelegramWebApp.instance.initData.toString()),
             const Text(
               'You have pushed the button this many times:',
             ),
