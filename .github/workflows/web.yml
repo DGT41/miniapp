@@ -17,3 +17,4 @@ jobs:
           channel: 'stable'
           baseHref: /miniapp/
 #          webRenderer: canvaskit
+      - run: flutter --version
