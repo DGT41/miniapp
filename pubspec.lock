@@ -176,6 +176,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.2.0"
+  telegram_web_app:
+    dependency: "direct main"
+    description:
+      name: telegram_web_app
+      sha256: da3246911cae116a4a86ac88b7ba6793158bcb7ee11915f8d5f0c9ca1e4f1e3b
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.3.0"
   term_glyph:
     dependency: transitive
     description:
@@ -210,4 +218,4 @@ packages:
     version: "14.2.5"
 sdks:
   dart: ">=3.5.3 <4.0.0"
-  flutter: ">=3.18.0-18.0.pre.54"
+  flutter: ">=3.22.0"
