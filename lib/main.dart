@@ -54,8 +54,8 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
 
-            Text(TelegramWebApp.instance.version),
-            Text(TelegramWebApp.instance.themeParams),
+            Text(TelegramWebApp.instance.version.toString()),
+            Text(TelegramWebApp.instance.themeParams.toString()),
             Text(TelegramWebApp.instance.initData.toString()),
             const Text(
               'You have pushed the button this many times:',
