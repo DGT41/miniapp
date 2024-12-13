@@ -45,7 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   Future<void> wallets() async {
     final connector = TonConnect('https://raw.githubusercontent.com/XaBbl4/pytonconnect/main/pytonconnect-manifest.json');
-    final List<WalletApp> wallets = await connector.getWallets();
+    final List wallets = await connector.getWallets();
     print('Wallets: $wallets');
   }
 
