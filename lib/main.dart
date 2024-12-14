@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-// import 'package:telegram_web_app/telegram_web_app.dart';
-import 'package:darttonconnect/ton_connect.dart';
+import 'package:telegram_web_app/telegram_web_app.dart';
+// import 'package:darttonconnect/ton_connect.dart';
 
 void main() {
   runApp(const MyApp());
@@ -43,16 +43,16 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
-  Future<void> wallets() async {
-    final connector = TonConnect('https://raw.githubusercontent.com/XaBbl4/pytonconnect/main/pytonconnect-manifest.json');
-    final List wallets = await connector.getWallets();
-    print('Wallets: $wallets');
-  }
+  // Future<void> wallets() async {
+  //   final connector = TonConnect('https://raw.githubusercontent.com/XaBbl4/pytonconnect/main/pytonconnect-manifest.json');
+  //   final List wallets = await connector.getWallets();
+  //   print('Wallets: $wallets');
+  // }
 
   @override
   void initState() {
     super.initState();
-    wallets();
+    // wallets();
   }
   @override
   Widget build(BuildContext context) {
@@ -66,9 +66,9 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
 
-            // Text(TelegramWebApp.instance.version.toString()),
-            // Text(TelegramWebApp.instance.themeParams.toString()),
-            // Text(TelegramWebApp.instance.initData.toString()),
+            Text(TelegramWebApp.instance.version.toString()),
+            Text(TelegramWebApp.instance.themeParams.toString()),
+            Text(TelegramWebApp.instance.initData.toString()),
             const Text(
               'You have pushed the button this many times:',
             ),
